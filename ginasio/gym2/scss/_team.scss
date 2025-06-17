@@ -1,0 +1,95 @@
+.team_bg_1{
+    background-image: url(../img/banner/trainer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_area{
+    padding-top: 155px;
+    padding-bottom: 122px;
+    @media #{$mobile_device}{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    @media #{$mobile_device}{
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    &.overlay2::before {
+        opacity: 0.85;
+    }
+    .single_team{
+        margin-bottom: 30px;
+        .team_thumb{
+            @include border-radius(10px);
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 100%;
+                @include border-radius(10px);
+            }
+            .team_hover{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.50);
+                @include transform(translateY(10%));
+                @include transition(.3s);
+                opacity: 0;
+                .hover_inner{
+                    position: absolute;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    ul{
+                        li{
+                            display: inline-block;
+                            margin: 0 4px;
+                            a{
+                                width: 40px;
+                                height: 40px;
+                                @include border-radius(50%);
+                                line-height: 37px !important;
+                                text-align: center;
+                                font-size: 15px;
+                                color: #909294;
+                                border: 1px solid #909294;
+                                display: inline-block;
+                                &:hover{
+                                    background: #FF1414;
+                                    border: 1px solid #FF1414;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .team_title{
+            padding-top: 15px;
+            h3{
+                font-size: 36px;
+                font-family: $font3;
+                color: #FFFFFF;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 0;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+        &:hover{
+            .team_hover{
+                @include transform(translateY(0px));
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Burger</title>
+    <meta name="description" content="" />
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link rel="shortcut icon" href="img/favicon.png"> -->
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Syntax Highlighter -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="syntax-highlighter/styles/shCore.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="syntax-highlighter/styles/shThemeDefault.css"
+      media="all"
+    />
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Normalize/Reset CSS-->
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body id="welcome">
+    <aside class="left-sidebar">
+      <div class="logo">
+        <a href="#welcome">
+          <h1>Burger</h1>
+        </a>
+      </div>
+      <nav class="left-nav">
+        <ul id="nav">
+          <li class="current"><a href="#welcome">Bem-vindo</a></li>
+          <li><a href="#installation">Instalação</a></li>
+          <li><a href="#tmpl-structure">Estrutura</a></li>
+          <li><a href="#css-structure">Ficheiros CSS</a></li>
+          <li><a href="#javascript">Bibliotecas JavaScript</a></li>
+          <li><a href="#contact-form">Formulário de Contacto</a></li>
+          <li><a href="#subscription-form">Formulário de Subscrição</a></li>
+          <li><a href="#video">Vídeo Tutorial</a></li>
+          <li><a href="#credit">Fontes e Créditos</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div id="main-wrapper">
+      <div class="main-content">
+        <section id="welcome">
+          <div class="content-header">
+            <h1>Burger</h1>
+          </div>
+          <div class="welcome">
+            <h2 class="twenty">Bem-vindo ao Burger</h2>
+
+            <p>
+              Antes de mais, um enorme obrigado por adquirir este tema, o seu
+              apoio é realmente apreciado!
+            </p>
+
+            <p>
+              Este documento cobre a instalação e utilização deste tema e
+              responde frequentemente a dúvidas e problemas comuns - leia este
+              documento atentamente se estiver a ter dificuldades. Se tiver
+              questões para além do que está aqui, contacte-nos. Muito obrigado!
+            </p>
+          </div>
+
+          <div class="features">
+            <h2 class="twenty">Funcionalidades do Template</h2>
+
+            <ul>
+              <li>Design Limpo &amp; Simples</li>
+              <li>HTML5 &amp; CSS3</li>
+              <li>Design Totalmente Responsivo</li>
+              <li>Formulário de Contacto Funcional em PHP/Ajax</li>
+              <li>Todos os ficheiros bem comentados</li>
+              <li>
+                Totalmente compatível com IE11+, Firefox, Safari, Opera, Chrome
+              </li>
+              <li>Documentação Extensa</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="installation">
+          <div class="content-header">
+            <h1>Burger</h1>
+          </div>
+          <h2 class="title">Instalar o Template.</h2>
+
+          <div class="section-content">
+            <ol>
+              <li>
+                Após descompactar o ficheiro, encontrará uma pasta com todos os
+                ficheiros do Template.
+              </li>
+              <li>
+                Pode visualizar este Template em qualquer navegador, pode exibir
+                ou editar o Template sem ligação à internet (os tipos de letra e
+                o mapa Google podem não funcionar).
+              </li>
+              <li>
+                A única secção que não funcionará é a de Contacto, pois contém
+                código PHP e requer um servidor para enviar mensagens.
+              </li>
+              <li>
+                Aceda ao seu cPanel ou abra o seu cliente FTP (como o
+                <a
+                  target="_blank"
+                  href="https://filezilla-project.org/download.php"
+                  >Filezilla</a
+                >) e faça upload do conteúdo do Template para a raiz do seu
+                servidor.
+              </li>
+              <li>
+                Depois dos ficheiros carregados, aceda a
+                www.seudominio.com/index.html
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="tmpl-structure">
+          <h2 class="title">Estrutura do Template</h2>
+          <p class="fifteen">
+            Toda a informação da área principal está dentro da tag body. A
+            estrutura geral do template é praticamente igual em todas as
+            páginas. Eis a estrutura geral da página principal (index.html).
+          </p>
+          <pre class="brush: html">
+					<header class="header_area">
+
+					</header>
+
+					<main class="site-main">
+						<section class="section">
+
+						</section>
+						<section class="section">
+
+						</section>
+						<section class="section">
+
+						</section>
+					</main>
+
+					<footer class="footer">
+
+					</footer>
+				</pre>
+        </section>
+
+        <section id="css-structure">
+          <h2 class="title">Ficheiros CSS e Estrutura</h2>
+          <p class="fifteen">
+            Estes são os ficheiros CSS carregados no template na
+            <strong>Secção Head</strong>.
+          </p>
+          <pre class="brush: html">
+		            <!--
+                    CSS
+                    ============================================= -->
+                    <!-- Bootstrap CSS -->
+					<!-- CSS aqui -->
+					<link rel="stylesheet" href="css/bootstrap.min.css">
+					<link rel="stylesheet" href="css/owl.carousel.min.css">
+					<link rel="stylesheet" href="css/magnific-popup.css">
+					<link rel="stylesheet" href="css/font-awesome.min.css">
+					<link rel="stylesheet" href="css/themify-icons.css">
+					<link rel="stylesheet" href="css/gijgo.css">
+					<link rel="stylesheet" href="css/nice-select.css">
+					<link rel="stylesheet" href="css/animate.css">
+					<link rel="stylesheet" href="css/flaticon.css">
+					<link rel="stylesheet" href="css/slicknav.css">
+				
+					<link rel="stylesheet" href="css/style.css">
+                </pre>
+
+          <h2 class="title">Google Web Fonts</h2>
+
+          <p>
+            Por defeito, o template carrega esta fonte do Google Web Fonts, pode
+            alterar para a que preferir.
+          </p>
+
+          <pre class="brush:html">		                
+						<!--
+						Google Font
+						=========================== -->
+						<link href="https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap" rel="stylesheet"> 
+					</pre>
+
+          <p class="twenty">
+            Lembre-se de alterar a fonte também no <strong>style.css</strong>
+          </p>
+        </section>
+
+        <section id="javascript">
+          <h2 class="title">Ficheiros Javascript e Estrutura</h2>
+
+          <p class="fifteen">
+            Estes são os ficheiros Javascript carregados no final da
+            <strong>Secção Body</strong>.
+          </p>
+
+          <pre class="brush: html">
+                  <!--
+                  JavaScripts
+                  ========================== -->
+					
+				<!-- JS aqui -->
+				<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+				<script src="js/vendor/jquery-1.12.4.min.js"></script>
+				<script src="js/popper.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/owl.carousel.min.js"></script>
+				<script src="js/isotope.pkgd.min.js"></script>
+				<script src="js/ajax-form.js"></script>
+				<script src="js/waypoints.min.js"></script>
+				<script src="js/jquery.counterup.min.js"></script>
+				<script src="js/imagesloaded.pkgd.min.js"></script>
+				<script src="js/scrollIt.js"></script>
+				<script src="js/jquery.scrollUp.min.js"></script>
+				<script src="js/wow.min.js"></script>
+				<script src="js/nice-select.min.js"></script>
+				<script src="js/jquery.slicknav.min.js"></script>
+				<script src="js/jquery.magnific-popup.min.js"></script>
+				<script src="js/plugins.js"></script>
+				<script src="js/gijgo.min.js"></script>
+
+				<!--contact js-->
+				<script src="js/contact.js"></script>
+				<script src="js/jquery.ajaxchimp.min.js"></script>
+				<script src="js/jquery.form.js"></script>
+				<script src="js/jquery.validate.min.js"></script>
+				<script src="js/mail-script.js"></script>
+
+
+				<script src="js/main.js"></script>
+              </pre>
+        </section>
+
+        <section id="contact-form">
+          <h2 class="title">Formulário de Contacto</h2>
+          <p>
+            Este é um script PHP para enviar mensagens para o seu email, deve
+            substituir <strong>demo@site.com</strong> pelo seu email para
+            começar a receber mensagens.
+          </p>
+          <pre class="brush:php">
+          		$to = 'contacto@burger.pt'; // substitua por o seu email
+          		$firstname = $_POST["fname"];
+          		$email= $_POST["email"];
+          		$headers = 'MIME-Version: 1.0' . "\r\n";
+          		$headers .= "From: " . $email . "\r\n"; // Email do remetente
+          		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+          		$message ='<table style="width:100%">
+          			<tr>
+          				<td>'.$firstname.'  '.$laststname.'</td>
+          			</tr>
+          			<tr><td>Email: '.$email.'</td></tr>
+          		</table>';
+
+          		if (@mail($to, $email, $message, $headers))
+          		{
+          			echo 'A mensagem foi enviada.';
+          		}else{
+          		echo 'falhou';
+          	}
+          </pre>
+        </section>
+        <section id="subscription-form">
+          <h2 class="title">Formulário de Subscrição</h2>
+          <p>
+            Substitua esta ação pelo seu URL do mailchimp. Não remova as aspas
+            "". Cole o URL dentro das aspas.
+          </p>
+          <pre class="brush: javascript">
+      		<div id="mc_embed_signup">
+      			//Substitua esta ação pelo seu URL do mailchimp. Não remova as aspas "". Cole o URL dentro das aspas.
+      			<form target="_blank" novalidate action="https://sua-lista-mailchimp.com/subscribe/post?u=xxxx&id=xxxx" method="get" class="subscription relative d-flex justify-content-center"></form>
+      		</div>
+      	</pre>
+        </section>
+        <section id="video">
+          <h2 class="title">Vídeo Tutorial</h2>
+          <!-- 21:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe
+              class="embed-responsive-item"
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/i7_PRPLOxVE?rel=0&amp;controls=0&amp;showinfo=0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section id="credit">
+          <h2 class="title">Fontes e Créditos</h2>
+          <div class="script-source">
+            <ul>
+              <li>
+                <a target="_blank" href="http://www.pexels.com">Pexels</a>
+              </li>
+              <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+              <li>
+                <a target="_blank" href="http://getbootstrap.com"
+                  >Bootstrap Framework</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://dimsemenov.com/plugins/magnific-popup/"
+                  >magnific popup</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://masonry.desandro.com/"
+                  >masonry</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.flaticon.com/home"
+                  >flaticon</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="http://www.owlgraphic.com/owlcarousel"
+                  >Owl Carousel</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/iamMonzurul/jQuery-AJAX-MailChimp"
+                  >Ajax Mailchimp</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="http://fontawesome.io/">FontAwesome</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://themify.me/themify-icons"
+                  >Themify Icons</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p style="margin-top: 20px">
+            Design por Gabriel Oliveira | Endereço: Av. da República, 56
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Essential JavaScript Libraries
+			==============================================-->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script
+      type="text/javascript"
+      src="syntax-highlighter/scripts/shCore.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="syntax-highlighter/scripts/shBrushXml.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="syntax-highlighter/scripts/shBrushCss.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="syntax-highlighter/scripts/shBrushJScript.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="syntax-highlighter/scripts/shBrushPhp.js"
+    ></script>
+    <script type="text/javascript">
+      SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

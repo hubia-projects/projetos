@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>Realtors &mdash; Imobiliária em Portugal</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="site-wrap" id="home-section">
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+      <header class="site-navbar site-navbar-target" role="banner">
+        <div class="container">
+          <div class="row align-items-center position-relative">
+            <div class="col-3">
+              <div class="site-logo">
+                <a href="index.html">Realtors</a>
+              </div>
+            </div>
+
+            <div class="col-9 text-right">
+              <span class="d-inline-block d-lg-none"
+                ><a
+                  href="#"
+                  class="text-white site-menu-toggle js-menu-toggle py-5 text-white"
+                  ><span class="icon-menu h3 text-white"></span></a
+              ></span>
+
+              <nav
+                class="site-navigation text-right ml-auto d-none d-lg-block"
+                role="navigation"
+              >
+                <ul class="site-menu main-menu js-clone-nav ml-auto">
+                  <li class="active">
+                    <a href="index.html" class="nav-link">Início</a>
+                  </li>
+                  <li><a href="agents.html" class="nav-link">Agentes</a></li>
+                  <li><a href="property.html" class="nav-link">Imóveis</a></li>
+                  <li><a href="about.html" class="nav-link">Sobre</a></li>
+                  <li><a href="blog.html" class="nav-link">Blog</a></li>
+                  <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="ftco-blocks-cover-1">
+        <div
+          class="site-section-cover overlay"
+          data-stellar-background-ratio="0.5"
+          style="background-image: url('images/hero_1.jpg')"
+        >
+          <div class="container">
+            <div
+              class="row align-items-center justify-content-center text-center"
+            >
+              <div class="col-md-7">
+                <span class="h4 text-primary mb-4 d-block">1.570.000€</span>
+                <h1 class="mb-2">Casa dos Sonhos em Portugal</h1>
+                <p class="text-center mb-5">
+                  <span
+                    class="small address d-flex align-items-center justify-content-center"
+                  >
+                    <span class="icon-room mr-3 text-primary"></span>
+                    <span
+                      >Rua da Praia 45, 2825-485 Costa da Caparica</span
+                    ></span
+                  >
+                </p>
+                <div class="d-flex media-38289 justify-content-around mb-5">
+                  <div class="sq d-flex align-items-center">
+                    <span class="wrap-icon icon-fullscreen"></span>
+                    <span>2911 m²</span>
+                  </div>
+                  <div class="bed d-flex align-items-center">
+                    <span class="wrap-icon icon-bed"></span> <span>2</span>
+                  </div>
+                  <div class="bath d-flex align-items-center">
+                    <span class="wrap-icon icon-bath"></span> <span>2</span>
+                  </div>
+                </div>
+                <p>
+                  <a href="#" class="btn btn-primary text-white px-4 py-3"
+                    >Saber Mais</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form action="">
+        <div class="realestate-filter">
+          <div class="container">
+            <div class="realestate-filter-wrap nav">
+              <a
+                href="#for-rent"
+                class="active"
+                data-toggle="tab"
+                id="rent-tab"
+                aria-controls="rent"
+                aria-selected="true"
+                >Para Arrendar</a
+              >
+              <a
+                href="#for-sale"
+                class=""
+                data-toggle="tab"
+                id="sale-tab"
+                aria-controls="sale"
+                aria-selected="false"
+                >Para Venda</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="realestate-tabpane pb-5">
+          <div class="container tab-content">
+            <div
+              class="tab-pane active"
+              id="for-rent"
+              role="tabpanel"
+              aria-labelledby="rent-tab"
+            >
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <select name="" id="" class="form-control w-100">
+                    <option value="">Todos os Tipos</option>
+                    <option value="">Moradias</option>
+                    <option value="">Duplex</option>
+                    <option value="">T4+</option>
+                    <option value="">Apartamentos</option>
+                  </select>
+                </div>
+                <div class="col-md-4 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Título"
+                  />
+                </div>
+                <div class="col-md-4 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <select name="" id="" class="form-control w-100">
+                    <option value="">Quartos</option>
+                    <option value="">0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3+</option>
+                  </select>
+                </div>
+                <div class="col-md-4 form-group">
+                  <select name="" id="" class="form-control w-100">
+                    <option value="">Casas de Banho</option>
+                    <option value="">0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3+</option>
+                  </select>
+                </div>
+                <div class="col-md-4 form-group">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <select name="" id="" class="form-control w-100">
+                        <option value="">Preço Mínimo</option>
+                        <option value="">100€</option>
+                        <option value="">200€</option>
+                        <option value="">300€</option>
+                        <option value="">400€</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <select name="" id="" class="form-control w-100">
+                        <option value="">Preço Máximo</option>
+                        <option value="">25.000€</option>
+                        <option value="">50.000€</option>
+                        <option value="">75.000€</option>
+                        <option value="">100.000€</option>
+                        <option value="">1.000.000€</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <input
+                    type="submit"
+                    class="btn btn-black py-3 btn-block"
+                    value="Pesquisar"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="for-sale"
+              role="tabpanel"
+              aria-labelledby="sale-tab"
+            >
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <select name="" id="" class="form-control w-100">
+                    <option value="">Todos os Tipos</option>
+                    <option value="">Moradias</option>
+                    <option value="">Duplex</option>
+                    <option value="">T4+</option>
+                    <option value="">Apartamentos</option>
+                  </select>
+                </div>
+                <div class="col-md-4 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Título"
+                  />
+                </div>
+                <div class="col-md-4 form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <select name="" id="" class="form-control w-100">
+                    <option value="">Quartos</option>
+                    <option value="">0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3+</option>
+                  </select>
+                </div>
+                <div class="col-md-4 form-group">
+                  <select name="" id="" class="form-control w-100">
+                    <option value="">Casas de Banho</option>
+                    <option value="">0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3+</option>
+                  </select>
+                </div>
+                <div class="col-md-4 form-group">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <select name="" id="" class="form-control w-100">
+                        <option value="">Preço Mínimo</option>
+                        <option value="">100€</option>
+                        <option value="">200€</option>
+                        <option value="">300€</option>
+                        <option value="">400€</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <select name="" id="" class="form-control w-100">
+                        <option value="">Preço Máximo</option>
+                        <option value="">25.000€</option>
+                        <option value="">50.000€</option>
+                        <option value="">75.000€</option>
+                        <option value="">100.000€</option>
+                        <option value="">1.000.000€</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <input
+                    type="submit"
+                    class="btn btn-black py-3 btn-block"
+                    value="Pesquisar"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-lg-6">
+              <div class="h-100 p-5 bg-black">
+                <div class="row">
+                  <div class="col-md-6 text-center mb-4">
+                    <div class="service-38201">
+                      <span class="flaticon-house-2"></span>
+                      <h3>Seguro de Imóveis</h3>
+                      <p>Gestão de Propriedades</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 text-center mb-4">
+                    <div class="service-38201">
+                      <span class="flaticon-bathtub"></span>
+                      <h3>Banheira Elegante</h3>
+                      <p>Gestão de Propriedades</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 text-center mb-4">
+                    <div class="service-38201">
+                      <span class="flaticon-house-1"></span>
+                      <h3>Ar Puro</h3>
+                      <p>Gestão de Propriedades</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 text-center mb-4">
+                    <div class="service-38201">
+                      <span class="flaticon-calculator"></span>
+                      <h3>Calculadora Imobiliária</h3>
+                      <p>Gestão de Propriedades</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 ml-auto">
+              <h3 class="heading-29201">Sobre Nós</h3>
+
+              <p class="mb-5">
+                A Realtors é uma imobiliária de referência em Portugal, dedicada
+                a encontrar as melhores soluções para quem procura comprar,
+                vender ou arrendar imóveis. Conte com uma equipa experiente e um
+                serviço de excelência.
+              </p>
+
+              <div class="service-39290 d-flex align-items-start mb-5">
+                <div class="media-icon mr-4">
+                  <span class="flaticon-house-1"></span>
+                </div>
+                <div class="text">
+                  <h3>Missão</h3>
+                  <p>
+                    Oferecer um serviço personalizado, transparente e seguro,
+                    acompanhando cada cliente em todas as etapas do processo
+                    imobiliário.
+                  </p>
+                </div>
+              </div>
+
+              <div class="service-39290 d-flex align-items-start mb-5">
+                <div class="media-icon mr-4">
+                  <span class="flaticon-calculator"></span>
+                </div>
+                <div class="text">
+                  <h3>Visão</h3>
+                  <p>
+                    Ser reconhecida como a imobiliária de confiança em Portugal,
+                    inovando e superando as expectativas dos nossos clientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section bg-black block-14">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+              <h3 class="heading-29201 text-center text-white">
+                Imóveis Recentes
+              </h3>
+
+              <p class="mb-5 text-white">
+                Veja as últimas oportunidades disponíveis para si em várias
+                regiões de Portugal.
+              </p>
+            </div>
+          </div>
+
+          <div class="owl-carousel nonloop-block-14">
+            <div class="media-38289">
+              <a href="property-single.html" class="d-block"
+                ><img src="images/img_1.jpg" alt="Imagem" class="img-fluid"
+              /></a>
+              <div class="text">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="sq d-flex align-items-center">
+                    <span class="wrap-icon icon-fullscreen"></span>
+                    <span>2911 m²</span>
+                  </div>
+                  <div class="bed d-flex align-items-center">
+                    <span class="wrap-icon icon-bed"></span> <span>2</span>
+                  </div>
+                  <div class="bath d-flex align-items-center">
+                    <span class="wrap-icon icon-bath"></span> <span>2</span>
+                  </div>
+                </div>
+                <h3 class="mb-3"><a href="#">570.000€</a></h3>
+                <span class="d-block small address d-flex align-items-center">
+                  <span class="icon-room mr-3 text-primary"></span>
+                  <span>Rua do Mar 12, 3800-567 Aveiro</span></span
+                >
+              </div>
+            </div>
+
+            <div class="media-38289">
+              <a href="property-single.html" class="d-block"
+                ><img src="images/img_2.jpg" alt="Imagem" class="img-fluid"
+              /></a>
+              <div class="text">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="sq d-flex align-items-center">
+                    <span class="wrap-icon icon-fullscreen"></span>
+                    <span>2911 m²</span>
+                  </div>
+                  <div class="bed d-flex align-items-center">
+                    <span class="wrap-icon icon-bed"></span> <span>2</span>
+                  </div>
+                  <div class="bath d-flex align-items-center">
+                    <span class="wrap-icon icon-bath"></span> <span>2</span>
+                  </div>
+                </div>
+                <h3 class="mb-3"><a href="#">1.570.000€</a></h3>
+                <span class="d-block small address d-flex align-items-center">
+                  <span class="icon-room mr-3 text-primary"></span>
+                  <span>Avenida dos Aliados 100, 4000-065 Porto</span></span
+                >
+              </div>
+            </div>
+
+            <div class="media-38289">
+              <a href="property-single.html" class="d-block"
+                ><img src="images/img_3.jpg" alt="Imagem" class="img-fluid"
+              /></a>
+              <div class="text">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="sq d-flex align-items-center">
+                    <span class="wrap-icon icon-fullscreen"></span>
+                    <span>2911 m²</span>
+                  </div>
+                  <div class="bed d-flex align-items-center">
+                    <span class="wrap-icon icon-bed"></span> <span>2</span>
+                  </div>
+                  <div class="bath d-flex align-items-center">
+                    <span class="wrap-icon icon-bath"></span> <span>2</span>
+                  </div>
+                </div>
+                <h3 class="mb-3"><a href="#">980.000€</a></h3>
+                <span class="d-block small address d-flex align-items-center">
+                  <span class="icon-room mr-3 text-primary"></span>
+                  <span>Rua das Oliveiras 55, 4710-273 Braga</span></span
+                >
+              </div>
+            </div>
+
+            <div class="media-38289">
+              <a href="property-single.html" class="d-block"
+                ><img src="images/img_1.jpg" alt="Imagem" class="img-fluid"
+              /></a>
+              <div class="text">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="sq d-flex align-items-center">
+                    <span class="wrap-icon icon-fullscreen"></span>
+                    <span>2911 m²</span>
+                  </div>
+                  <div class="bed d-flex align-items-center">
+                    <span class="wrap-icon icon-bed"></span> <span>2</span>
+                  </div>
+                  <div class="bath d-flex align-items-center">
+                    <span class="wrap-icon icon-bath"></span> <span>2</span>
+                  </div>
+                </div>
+                <h3 class="mb-3"><a href="#">570.000€</a></h3>
+                <span class="d-block small address d-flex align-items-center">
+                  <span class="icon-room mr-3 text-primary"></span>
+                  <span>Rua do Sol 8, 8000-123 Faro</span></span
+                >
+              </div>
+            </div>
+
+            <div class="media-38289">
+              <a href="property-single.html" class="d-block"
+                ><img src="images/img_2.jpg" alt="Imagem" class="img-fluid"
+              /></a>
+              <div class="text">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="sq d-flex align-items-center">
+                    <span class="wrap-icon icon-fullscreen"></span>
+                    <span>2911 m²</span>
+                  </div>
+                  <div class="bed d-flex align-items-center">
+                    <span class="wrap-icon icon-bed"></span> <span>2</span>
+                  </div>
+                  <div class="bath d-flex align-items-center">
+                    <span class="wrap-icon icon-bath"></span> <span>2</span>
+                  </div>
+                </div>
+                <h3 class="mb-3"><a href="#">1.570.000€</a></h3>
+                <span class="d-block small address d-flex align-items-center">
+                  <span class="icon-room mr-3 text-primary"></span>
+                  <span>Rua do Comércio 22, 1100-150 Lisboa</span></span
+                >
+              </div>
+            </div>
+
+            <div class="media-38289">
+              <a href="property-single.html" class="d-block"
+                ><img src="images/img_3.jpg" alt="Imagem" class="img-fluid"
+              /></a>
+              <div class="text">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="sq d-flex align-items-center">
+                    <span class="wrap-icon icon-fullscreen"></span>
+                    <span>2911 m²</span>
+                  </div>
+                  <div class="bed d-flex align-items-center">
+                    <span class="wrap-icon icon-bed"></span> <span>2</span>
+                  </div>
+                  <div class="bath d-flex align-items-center">
+                    <span class="wrap-icon icon-bath"></span> <span>2</span>
+                  </div>
+                </div>
+                <h3 class="mb-3"><a href="#">980.000€</a></h3>
+                <span class="d-block small address d-flex align-items-center">
+                  <span class="icon-room mr-3 text-primary"></span>
+                  <span>Rua das Laranjeiras 10, 9000-123 Funchal</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-6 text-center">
+              <h3 class="heading-29201 text-center">Os Nossos Agentes</h3>
+
+              <p class="mb-5">
+                Perspiciatis quidem, harum provident, repellat sint officia quos
+                fugit tempora id deleniti.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-5 mb-md-0">
+              <div class="person-29381">
+                <div class="media-39912">
+                  <img
+                    src="images/person_1.jpg"
+                    alt="Imagem"
+                    class="img-fluid"
+                  />
+                </div>
+                <h3><a href="#">Josh Long</a></h3>
+                <span class="meta d-block mb-4">4 Propriedades</span>
+                <div class="social-32913">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+              <div class="person-29381">
+                <div class="media-39912">
+                  <img
+                    src="images/person_3.jpg"
+                    alt="Imagem"
+                    class="img-fluid"
+                  />
+                </div>
+                <h3><a href="#">Melinda David</a></h3>
+                <span class="meta d-block mb-4">10 Propriedades</span>
+                <div class="social-32913">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+              <div class="person-29381">
+                <div class="media-39912">
+                  <img
+                    src="images/person_2.jpg"
+                    alt="Imagem"
+                    class="img-fluid"
+                  />
+                </div>
+                <h3><a href="#">Jessica Soft</a></h3>
+                <span class="meta d-block mb-4">18 Propriedades</span>
+                <div class="social-32913">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section bg-primary">
+        <div class="container block-13">
+          <div class="nonloop-block-13 owl-carousel">
+            <div class="testimonial-38920 d-flex align-items-start">
+              <div class="pic mr-4">
+                <img src="images/person_1.jpg" alt="" />
+              </div>
+              <div>
+                <span class="meta">Business Man</span>
+                <h3 class="mb-4">Josh Long</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  sapiente unde pariatur id, hic quos nihil nulla veritatis!
+                </p>
+                <div class="mt-4">
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-38920 d-flex align-items-start">
+              <div class="pic mr-4">
+                <img src="images/person_2.jpg" alt="" />
+              </div>
+              <div>
+                <span class="meta">Business Woman</span>
+                <h3 class="mb-4">Jean Doe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  sapiente unde pariatur id, hic quos nihil nulla veritatis!
+                </p>
+                <div class="mt-4">
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-38920 d-flex align-items-start">
+              <div class="pic mr-4">
+                <img src="images/person_3.jpg" alt="" />
+              </div>
+              <div>
+                <span class="meta">Business Woman</span>
+                <h3 class="mb-4">Jean Doe</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  sapiente unde pariatur id, hic quos nihil nulla veritatis!
+                </p>
+                <div class="mt-4">
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                  <span class="icon-star text-white"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section bg-light">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-6 text-center">
+              <h3 class="heading-29201 text-center">Blog Posts</h3>
+
+              <p class="mb-5">
+                Perspiciatis quidem, harum provident, repellat sint officia quos
+                fugit tempora id deleniti.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="post-entry-1 h-100">
+                <a href="single.html">
+                  <img src="images/img_1.jpg" alt="Imagem" class="img-fluid" />
+                </a>
+                <div class="post-entry-1-contents">
+                  <h2><a href="single.html">Lorem ipsum dolor sit amet</a></h2>
+                  <span class="meta d-inline-block mb-3"
+                    >July 17, 2019 <span class="mx-2">by</span>
+                    <a href="#">Admin</a></span
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores eos soluta, dolore harum molestias consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="post-entry-1 h-100">
+                <a href="single.html">
+                  <img src="images/img_2.jpg" alt="Imagem" class="img-fluid" />
+                </a>
+                <div class="post-entry-1-contents">
+                  <h2><a href="single.html">Lorem ipsum dolor sit amet</a></h2>
+                  <span class="meta d-inline-block mb-3"
+                    >July 17, 2019 <span class="mx-2">by</span>
+                    <a href="#">Admin</a></span
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores eos soluta, dolore harum molestias consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="post-entry-1 h-100">
+                <a href="single.html">
+                  <img src="images/img_3.jpg" alt="Imagem" class="img-fluid" />
+                </a>
+                <div class="post-entry-1-contents">
+                  <h2><a href="single.html">Lorem ipsum dolor sit amet</a></h2>
+                  <span class="meta d-inline-block mb-3"
+                    >July 17, 2019 <span class="mx-2">by</span>
+                    <a href="#">Admin</a></span
+                  >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolores eos soluta, dolore harum molestias consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="text-white h5 mb-3">Subscrever</h3>
+              <form action="" class="d-flex">
+                <input
+                  type="text"
+                  class="form-control mr-3"
+                  placeholder="Insira o seu email"
+                />
+                <input
+                  type="submit"
+                  class="btn btn-primary text-white"
+                  value="Subscrever"
+                />
+              </form>
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h3 class="text-white h5 mb-3">Navegação</h3>
+              <ul class="list-unstyled menu-arrow">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Testemunhos</a></li>
+                <li><a href="#">Termos de Serviço</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3 class="text-white h5 mb-3">Sobre</h3>
+              <p>
+                Na Realtors, ajudamos a realizar sonhos. Oferecemos um serviço
+                completo, desde a pesquisa até à concretização do negócio,
+                sempre com transparência e dedicação. Email: apoio@realtors.pt
+              </p>
+              <p>Endereço: R. 23 365, 4500-240 Espinho</p>
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+                <p>
+                  Design por Gabriel Oliveira | Endereço: R. 23 365, 4500-240
+                  Espinho
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

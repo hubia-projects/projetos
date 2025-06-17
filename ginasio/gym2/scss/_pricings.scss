@@ -1,0 +1,62 @@
+.priscing_area{
+    background: #000000;
+    padding-bottom: 140px;
+    padding-top: 170px;
+    @media #{$mobile_device}{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    @media #{$tablet_device}{
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    .single_prising{
+        background: #1A1A1A;
+        padding: 40px 0;
+        border: 1px solid transparent ;
+        @include transition(.3s);
+        margin-bottom: 30px;
+        .prising_header{
+            padding-bottom: 23px;
+            h3{
+                font-size: 30px;
+                font-weight: 400;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            span{
+                position: relative;
+                font-family: $font3;
+                color: $btn-bg;
+                font-weight: 400;
+                font-size: 30px;
+            }
+        }
+        .pricing_body{
+            border-top: 1px solid #313131;
+            padding-top: 27px;
+            padding-bottom: 32px;
+            ul{
+                li{
+                    font-family: $font3;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    color: #fff;
+                    &.off-color{
+                        color: #7A838B;
+                    }
+                }
+            }
+        }
+        .pricing_btn{
+            a{
+
+            }
+        }
+        &:hover{
+            border: 1px solid $btn-bg ;
+        }
+    }
+
+}

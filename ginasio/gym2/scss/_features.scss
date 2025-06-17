@@ -1,0 +1,82 @@
+.features_area{
+    background: #000000;
+    padding-bottom: 140px;
+    padding-top: 170px;
+    @media #{$mobile_device}{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    @media #{$tablet_device}{
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    .single_feature{
+        margin-bottom: 30px;
+        .icon{
+
+        }
+        h4{
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: capitalize;
+            margin-top: 35px;
+            margin-bottom: 11px;
+        }
+        p{
+            color: #AAB1B7;
+        }
+    }
+}
+
+// offer_area 
+.offer_bg{
+    background-image: url(../img/banner/offer.png);
+}
+.offer_area{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 193px 0 210px 0;
+    @media #{$mobile_device}{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media #{$tablet_device}{
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+    .offer_text{
+        h4{
+            font-size: 46px;
+            line-height: 56px;
+            font-family: $font1;
+            color: #fff;
+            text-transform: uppercase;
+            @media #{$mobile_device}{
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+        h3{
+            color: #FF1414;
+            font-size: 100px;
+            font-weight: 400;
+            font-family: $font3;
+            line-height: 1;
+            margin-top: 24px;
+            margin-bottom: 10px;
+            @media #{$mobile_device}{
+                font-size: 60px;
+                line-height: 66px;
+            }
+            
+            
+        }
+        p{
+            color: #FFFFFF;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+    }
+}
