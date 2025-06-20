@@ -51,6 +51,7 @@
   ======================================================== -->
   </head>
 
+
   <body class="index-page">
     <header id="header" class="header dark-background d-flex flex-column">
       <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -128,40 +129,43 @@
 
     <main class="main">
       <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
-        <picture>
-          <source
-            srcset="assets/img/foto-perfil2.png"
-            media="(max-width: 500px)"
-            class="mirror-left"
-          />
-          <img
-            src="assets/img/foto-perfil1.png"
-            alt=""
-            data-aos="fade-in"
-            class=""
-          />
-        </picture>
+<section id="hero" class="hero section dark-background">
+  <picture>
+    <source
+      srcset="assets/img/foto-perfil2.png"
+      media="(max-width: 500px)"
+      class="mirror-left"
+    />
+    <img
+      src="assets/img/foto-perfil1.png"
+      alt=""
+      data-aos="fade-in"
+      class=""
+    />
+  </picture>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <h2>Gabriel Oliveira</h2>
-          <p>
-            Sou
-            <span
-              class="typed"
-              data-typed-items="Desenvolvedor Full Stack, Especialista em Integrações, Visionário em Automação, Fundador da Hubia"
-              >Designer</span
-            ><span
-              class="typed-cursor typed-cursor--blink"
-              aria-hidden="true"
-            ></span
-            ><span
-              class="typed-cursor typed-cursor--blink"
-              aria-hidden="true"
-            ></span>
-          </p>
-        </div>
-      </section>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2>Gabriel Oliveira</h2>
+    <p>
+      Sou
+      <span
+        class="typed"
+        data-typed-items="Desenvolvedor Full Stack, Especialista em Integrações, Visionário em Automação, Fundador da Hubia"
+      ></span>
+    </p>
+
+    <!-- ✅ Botões adicionados -->
+    <div class="d-flex justify-content-start gap-3 mt-4 flex-wrap">
+      <a href="#contact" class="btn btn-primary">
+        <i class="bi bi-send me-1"></i> Solicitar Orçamento
+      </a>
+      <a href="#portfolio" class="btn btn-outline-light">
+        <i class="bi bi-folder2-open me-1"></i> Ver Projetos
+      </a>
+    </div>
+  </div>
+</section>
+
       <!-- /Hero Section -->
 
       <!-- About Section -->
@@ -654,7 +658,7 @@
 
       <!-- Portfolio Section -->
       <section id="portfolio" class="portfolio section light-background">
-        <!-- Section Title -->
+        <!-- Título da Seção -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Portfólio</h2>
           <p>
@@ -662,404 +666,41 @@
             branding e design de produtos.
           </p>
         </div>
-        <!-- End Section Title -->
 
+        <!-- Container principal -->
         <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
-          >
-            <ul
-              class="portfolio-filters isotope-filters"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            
+            <!-- Filtros -->
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
               <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-app">Aplicação</li>
-              <li data-filter=".filter-product">Produto</li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-books">Livros</li>
+              <li data-filter=".Marketing">Marketing</li>
+              <li data-filter=".Restaurante">Restaurante</li>
+              <li data-filter=".Imobiliaria">Imobiliaria</li>
+              <li data-filter=".Viagem">Viagem</li>
+              
+              <li class="dropdown-categoria">
+                Mais <i class="bi bi-chevron-down"></i>
+                <ul class="dropdown-hidden">
+                  <li data-filter=".Clinicas">Clinicas</li>
+                  <li data-filter=".Ecommerce">Ecommerce</li>
+                  <li data-filter=".Ginasio">Ginasio</li>
+                  <li data-filter=".Pets">Pets</li>
+                  <li data-filter=".Portfolio">Portfolio</li>
+                  <li data-filter=".Construcao">Construcao</li>
+                </ul>
+              </li>
             </ul>
-            <!-- End Portfolio Filters -->
+            <!-- Fim dos Filtros -->
 
-            <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/app-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Aplicação 1</h4>
-                    <p>Aplicação web inovadora para gestão de tarefas.</p>
-                    <a
-                      href="assets/img/portfolio/app-1.jpg"
-                      title="Aplicação 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/product-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Produto 1</h4>
-                    <p>
-                      Design de produto funcional e moderno para o dia a dia.
-                    </p>
-                    <a
-                      href="assets/img/portfolio/product-1.jpg"
-                      title="Produto 1"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/branding-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 1</h4>
-                    <p>Criação de identidade visual para marcas de sucesso.</p>
-                    <a
-                      href="assets/img/portfolio/branding-1.jpg"
-                      title="Branding 1"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/books-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Livro 1</h4>
-                    <p>Design editorial para publicações e livros criativos.</p>
-                    <a
-                      href="assets/img/portfolio/books-1.jpg"
-                      title="Livro 1"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/app-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Aplicação 2</h4>
-                    <p>Aplicação móvel para gestão de tempo e produtividade.</p>
-                    <a
-                      href="assets/img/portfolio/app-2.jpg"
-                      title="Aplicação 2"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/product-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Produto 2</h4>
-                    <p>Design de embalagem sustentável e inovadora.</p>
-                    <a
-                      href="assets/img/portfolio/product-2.jpg"
-                      title="Produto 2"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/branding-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 2</h4>
-                    <p>
-                      Desenvolvimento de logótipos e identidade corporativa.
-                    </p>
-                    <a
-                      href="assets/img/portfolio/branding-2.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/books-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Livro 2</h4>
-                    <p>Projeto gráfico e diagramação de livro de receitas.</p>
-                    <a
-                      href="assets/img/portfolio/books-2.jpg"
-                      title="Livro 2"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/app-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Aplicação 3</h4>
-                    <p>Plataforma web para gestão de projetos e equipas.</p>
-                    <a
-                      href="assets/img/portfolio/app-3.jpg"
-                      title="Aplicação 3"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/product-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Produto 3</h4>
-                    <p>Design de mobiliário moderno e funcional.</p>
-                    <a
-                      href="assets/img/portfolio/product-3.jpg"
-                      title="Produto 3"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/branding-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 3</h4>
-                    <p>
-                      Identidade visual e design de embalagem para produtos
-                      gourmet.
-                    </p>
-                    <a
-                      href="assets/img/portfolio/branding-3.jpg"
-                      title="Branding 3"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/books-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Livro 3</h4>
-                    <p>Design e ilustração para livro infantil.</p>
-                    <a
-                      href="assets/img/portfolio/books-3.jpg"
-                      title="Livro 3"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="Mais Detalhes"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
+            <!-- Container de Projetos (dinâmico) -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <!-- Projetos serão carregados dinamicamente aqui -->
             </div>
-            <!-- End Portfolio Container -->
           </div>
         </div>
       </section>
+
       <!-- /Portfolio Section -->
 
       <!-- Services Section -->
@@ -1376,6 +1017,14 @@
                     <h3>Telefone</h3>
                     <p>+351 915 714 405</p>
                   </div>
+
+                      <a
+                        href="https://wa.me/351915714405"
+                        target="_blank"
+                        style="margin-left: 1rem;"
+                      >
+                        <i class="bi bi-whatsapp me-1"></i>
+                      </a>
                 </div>
                 <!-- End Info Item -->
 
@@ -1404,7 +1053,7 @@
             </div>
 
 <div class="col-lg-7">
-  <form action="javascript:void(0);" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+  <form class="php-email-form" data-aos="fade-up" data-aos-delay="200" onsubmit="return false;">
     <div class="row gy-4">
       <div class="col-md-6">
         <label for="name-field" class="pb-2">O Seu Nome</label>
@@ -1476,7 +1125,10 @@
                     .then(() => {
                       loading.style.display = "none";
                       successMsg.style.display = "block";
+                     setTimeout(() => {
                       form.reset();
+                    }, 500); // adiciona delay para evitar conflito com o submit automático
+
                     })
                     .catch((error) => {
                       loading.style.display = "none";
@@ -1523,7 +1175,7 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+   <!-- // <script src="assets/vendor/php-email-form/validate.js"></script>  -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1535,5 +1187,8 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/renderProjects.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1,
+    "title": "Dentcare",
+    "image": "/screenshots/dentcare.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/clinicas/dentcare/",
+    "description": "Clínica moderna e acessível, com marcação online, atendimento humanizado e serviços den...",
+    "date": "2024-01-10"
+  },
+    {
+    "id": 2,
+    "title": "Iportfolio",
+    "image": "/screenshots/iPortfolio.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/portfolio/iPortfolio/",
+    "description": "Portfólio pessoal moderno com foco em branding profissional. Apresenta competências téc...",
+    "date": "2024-06-01"
+  },
+  {
+    "id": 3,
+    "title": "Healthcoach",
+    "image": "/screenshots/healthcoach.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/clinicas/healthcoach/",
+    "description": "Serviço completo de coaching em saúde e bem-estar, com foco em nutrição, treino físico...",
+    "date": "2024-01-16"
+  },
+  {
+    "id": 4,
+    "title": "Mediccare",
+    "image": "/screenshots/mediccare.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/clinicas/mediccare/",
+    "description": "Clínica com serviços de saúde integrados, atendimento personalizado e foco no bem-estar...",
+    "date": "2024-01-19"
+  },
+  {
+    "id": 5,
+    "title": "Coloshop",
+    "image": "/screenshots/coloshop.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/ecommerce/coloshop/",
+    "description": "Loja virtual moderna com idiomas e moedas, carrinho, registo, categorias e blog para ec...",
+    "date": "2024-01-22"
+  },
+  {
+    "id": 6,
+    "title": "Foodmart",
+    "image": "/screenshots/foodmart.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/ecommerce/FoodMart/",
+    "description": "Template para mercearias online com categorias, carrinho offcanvas e sliders para promo...",
+    "date": "2024-01-25"
+  },
+  {
+    "id": 7,
+    "title": "Organic",
+    "image": "/screenshots/organic.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/ecommerce/organic/",
+    "description": "Ecommerce focado em produtos orgânicos, com design limpo, categorias, carrinho, entrega...",
+    "date": "2024-01-28"
+  },
+  {
+    "id": 8,
+    "title": "Energym",
+    "image": "/screenshots/energym.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/ginasio/energym/",
+    "description": "Website moderno e responsivo para ginásio, com serviços, depoimentos e design voltado à...",
+    "date": "2024-01-31"
+  },
+  {
+    "id": 9,
+    "title": "Gym2",
+    "image": "/screenshots/gym2.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/ginasio/gym2/",
+    "description": "Página de ginásio moderna com planos, categorias, treino por género e destaque para ofe...",
+    "date": "2024-02-03"
+  },
+  {
+    "id": 10,
+    "title": "Gymlife",
+    "image": "/screenshots/gymlife.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/ginasio/gymlife/",
+    "description": "Template de ginásio moderno com aulas variadas, cálculo de IMC, equipa profissional e p...",
+    "date": "2024-02-06"
+  },
+  {
+    "id": 11,
+    "title": "Xgym",
+    "image": "/screenshots/xgym.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/ginasio/xgym/",
+    "description": "Ginásio moderno com treinos intensos, planos personalizados, IMC online, ambiente motiv...",
+    "date": "2024-02-09"
+  },
+  {
+    "id": 12,
+    "title": "Garo Estate",
+    "image": "/screenshots/garo_estate.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/imobiliaria/garo-estate/",
+    "description": "Imobiliária com busca inteligente, filtros avançados e interface moderna para encontrar...",
+    "date": "2024-02-12"
+  },
+  {
+    "id": 13,
+    "title": "Homeland",
+    "image": "/screenshots/homeland.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/imobiliaria/homeland/",
+    "description": "Portal imobiliário com listagens filtráveis, preços visíveis e design moderno focado na...",
+    "date": "2024-02-15"
+  },
+  {
+    "id": 14,
+    "title": "Property",
+    "image": "/screenshots/property.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/imobiliaria/property/",
+    "description": "Portal imobiliário moderno com busca intuitiva, imóveis destacados e layout elegante pa...",
+    "date": "2024-02-18"
+  },
+  {
+    "id": 15,
+    "title": "Realtors",
+    "image": "/screenshots/realtors.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/imobiliaria/realtors/",
+    "description": "Plataforma elegante com foco em imóveis de luxo, busca avançada por filtros e experiênc...",
+    "date": "2024-02-21"
+  },
+  {
+    "id": 16,
+    "title": "Clyde",
+    "image": "/screenshots/clyde.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/marketing/clyde/",
+    "description": "Portfólio moderno e cativante para designers e criativos, com foco em presença digital,...",
+    "date": "2024-02-24"
+  },
+  {
+    "id": 17,
+    "title": "Digimedia",
+    "image": "/screenshots/digimedia.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/marketing/digimedia/",
+    "description": "Agência digital focada em SEO, tráfego e performance, com design moderno e estratégias...",
+    "date": "2024-02-27"
+  },
+  {
+    "id": 18,
+    "title": "Growmark",
+    "image": "/screenshots/growmark.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/marketing/GrowMark/",
+    "description": "Agência de marketing digital com estratégias personalizadas para crescimento, inovação...",
+    "date": "2024-03-01"
+  },
+  {
+    "id": 19,
+    "title": "Onix",
+    "image": "/screenshots/onix.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/marketing/onix/",
+    "description": "Agência moderna de marketing digital com foco em SEO, design responsivo, performance e...",
+    "date": "2024-03-04"
+  },
+  {
+    "id": 20,
+    "title": "Prixima",
+    "image": "/screenshots/prixima.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/marketing/prixima/",
+    "description": "Website moderno e completo para agências de marketing, com foco em design impactante, r...",
+    "date": "2024-03-07"
+  },
+  {
+    "id": 21,
+    "title": "Space_Dynamic",
+    "image": "/screenshots/space_dynamic.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/marketing/space_dynamic/",
+    "description": "Website moderno e animado para agências de SEO e marketing digital, com funcionalidades...",
+    "date": "2024-03-10"
+  },
+  {
+    "id": 22,
+    "title": "Anipat",
+    "image": "/screenshots/anipat.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/pets/anipat/",
+    "description": "Plataforma dedicada ao cuidado e adoção de animais, com foco em serviços como hotel pet...",
+    "date": "2024-03-13"
+  },
+  {
+    "id": 23,
+    "title": "Petcare",
+    "image": "/screenshots/petcare.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/pets/petcare/",
+    "description": "Site profissional para clínicas veterinárias e centros de cuidados animais, com funcion...",
+    "date": "2024-03-16"
+  },
+  {
+    "id": 24,
+    "title": "Petsitting",
+    "image": "/screenshots/petsitting.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/pets/petsitting/",
+    "description": "Website voltado para serviços de petsitting como passeios, creche e banho & tosa. Ideal...",
+    "date": "2024-03-19"
+  },
+  {
+    "id": 25,
+    "title": "Docmed",
+    "image": "/screenshots/docmed.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/clinicas/docmed/",
+    "description": "Plataforma médica com agendamento online, especialidades diversas e serviços personaliz...",
+    "date": "2024-01-13"
+  },
+  {
+    "id": 26,
+    "title": "Melan",
+    "image": "/screenshots/melan.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/portfolio/melan/",
+    "description": "Website profissional para o setor de portfolio, com foco em design responsivo, experiên...",
+    "date": "2024-03-25"
+  },
+  {
+    "id": 27,
+    "title": "Appetizer",
+    "image": "/screenshots/appetizer.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/restaurante/appetizer/",
+    "description": "Website elegante para restaurantes, com foco em reservas online, menu interativo e expe...",
+    "date": "2024-03-28"
+  },
+  {
+    "id": 28,
+    "title": "Burger Master",
+    "image": "/screenshots/burger_master.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/restaurante/burger-master/",
+    "description": "Hamburgueria com estilo urbano, imagens imersivas e navegação apetitosa.",
+    "date": "2024-03-31"
+  },
+  {
+    "id": 29,
+    "title": "Restoran",
+    "image": "/screenshots/restoran.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/restaurante/restoran/",
+    "description": "Restaurante premium com design escuro, animações suaves e toque de luxo.",
+    "date": "2024-04-03"
+  },
+  {
+    "id": 30,
+    "title": "Yummy Red",
+    "image": "/screenshots/yummy_red.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/restaurante/yummy-red/",
+    "description": "Restaurante vibrante com reservas rápidas, vídeos e menu visual apetitoso.",
+    "date": "2024-04-06"
+  },
+  {
+    "id": 31,
+    "title": "Jadoo",
+    "image": "/screenshots/jadoo.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/viagem/jadoo/",
+    "description": "Viagens com reservas intuitivas, destinos exóticos e visual inspirador.",
+    "date": "2024-04-09"
+  },
+  {
+    "id": 32,
+    "title": "Tour",
+    "image": "/screenshots/tour.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/viagem/tour/",
+    "description": "Viagens de luxo com pesquisa avançada, sliders e suporte durante a jornada.",
+    "date": "2024-04-12"
+  },
+  {
+    "id": 33,
+    "title": "Travela",
+    "image": "/screenshots/travela.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/viagem/travela/",
+    "description": "Turismo com reservas, sliders imersivos e blog para experiências completas.",
+    "date": "2024-04-15"
+  },
+  {
+    "id": 34,
+    "title": "Vacation",
+    "image": "/screenshots/vacation.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/viagem/vacation/",
+    "description": "Viagens completas com formulário, atividades e guia privado personalizado.",
+    "date": "2024-04-18"
+  },
+  {
+    "id": 35,
+    "title": "Voyage",
+    "image": "/screenshots/voyage.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/viagem/voyage/",
+    "description": "Busca por pacotes, voos e hotéis em visual moderno com navegação por abas.",
+    "date": "2024-04-21"
+  },
+  {
+    "id": 36,
+    "title": "Wooxtravel",
+    "image": "/screenshots/wooxtravel.png",
+    "favorite": true,
+    "link": "https://hubia-projects.github.io/projetos/viagem/wooxtravel/",
+    "description": "Destinos com sliders interativos, detalhes por país e foco em reservas rápidas.",
+    "date": "2024-04-24"
+  },
+  {
+    "id": 37,
+    "title": "Whatss-rc",
+    "image": "/screenshots/whatss-rc.png",
+    "favorite": false,
+    "link": "https://hubia-projects.github.io/projetos/construcao/whatss-rc/",
+    "description": "Website institucional para empresa de construção civil com foco em obras realizadas, contacto direto e navegação leve.",
+    "date": "2023-10-12"
+  },
+  {
+    "id": 38,
+    "title": "Imagem Center",
+    "image": "/screenshots/imagem-center.png",
+    "favorite": true,
+    "link": "http://imagemcenter.com.br/",
+    "description": "Site para gráfica e estamparia com apresentação dos serviços, catálogo visual e integração com WhatsApp para orçamentos rápidos.",
+    "date": "2024-01-25"
+  }
+]

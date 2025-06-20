@@ -840,6 +840,11 @@ section,
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.6);
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
@@ -849,6 +854,7 @@ section,
   color: #ffffff;
   display: inline-block;
   background-color: var(--accent-color);
+  margin-bottom: 0.5rem;
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -1292,5 +1298,191 @@ section,
 @media (max-width: 500px) {
   #hero picture img {
     filter: brightness(0.6);
+  }
+}
+/* Dropdown de categorias */
+.dropdown-hidden {
+  display: none;
+}
+
+.dropdown-categoria:hover + .dropdown-hidden {
+  display: block;
+}
+
+.dropdown-categoria {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-categoria ul.dropdown-hidden {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  z-index: 99;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 8px 20px #00000020;
+}
+
+.dropdown-categoria:hover ul.dropdown-hidden {
+  display: block;
+}
+
+.dropdown-categoria ul.dropdown-hidden li {
+  padding: 10px 15px;
+  white-space: nowrap;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown-categoria ul.dropdown-hidden li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Container de projetos */
+.isotope-container {
+  min-height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Paginação */
+.pagination-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.page-btn {
+  padding: 6px 12px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.page-btn.active,
+.page-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Card de projeto */
+.portfolio-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-content img {
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.portfolio-content:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay de info */
+.portfolio-info-overlay {
+  position: absolute;
+  top: 0; /* <- aqui o ajuste pra subir */
+  left: 0;
+  right: 0;
+  bottom: 0; /* cobre tudo */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portfolio-content:hover .portfolio-info-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-info-overlay h4,
+.portfolio-info-overlay p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.portfolio-info-overlay a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.portfolio-info-overlay a:hover {
+  color: #00bcd4;
+}
+
+/* Novas regras para os ícones de ação dos cards do portfólio */
+.portfolio-info .portfolio-actions {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-info .portfolio-actions a {
+  color: #fff;
+  font-size: 2.2rem; /* aumenta o tamanho dos ícones */
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-info .portfolio-actions a:hover {
+  color: #007bff;
+}
+
+.portfolio-info-overlay a {
+  color: #fff;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+/* Espaçamento entre os cards do portfólio */
+.isotope-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 0; /* espaçamento vertical entre linhas */
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.portfolio-item {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 32px;
+  /* Garante que o espaçamento lateral e inferior seja aplicado */
+}
+
+/* Para garantir espaçamento entre colunas em todos os tamanhos */
+@media (max-width: 991.98px) {
+  .portfolio-item {
+    margin-bottom: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .isotope-container {
+    gap: 24px 0;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 }
