@@ -52,8 +52,14 @@
     </div>
     <!-- Body content -->
 
+    
+
     <div class="header-connect">
       <div class="container">
+
+
+
+
         <div class="row">
           <div class="col-md-5 col-sm-8 col-xs-12">
             <div class="header-half header-call">
@@ -94,8 +100,43 @@
     </div>
     <!--End top header -->
 
+
+
     <nav class="navbar navbar-default">
       <div class="container">
+
+
+                
+<div id="demo-modal" class="demo-modal hidden">
+  <div class="demo-modal-content">
+    <h3>🔔 Projeto Demonstrativo</h3>
+    <p>
+      Esta página é um projeto de demonstração desenvolvido para exibir
+      funcionalidades e design. Alguns dados apresentados são fictícios.
+    </p>
+    <button id="demo-modal-close">Entendi</button>
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("demo-modal");
+    const closeBtn = document.getElementById("demo-modal-close");
+
+    const isDismissed = localStorage.getItem("demo_modal_dismissed");
+
+    if (!isDismissed) {
+      modal.classList.remove("hidden");
+    }
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+      localStorage.setItem("demo_modal_dismissed", "true");
+    });
+  });
+</script>
+
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button
