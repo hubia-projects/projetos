@@ -1,0 +1,310 @@
+
+/* Configuração do container 1, zerando margens, definindo largura e altura e centralizando itens  */
+.container-1  {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+}
+
+.parte2-esquerdo{
+    width: 40%;
+}
+
+/* Definindo a largura e altura da div slider principal e deixando divs na mesma linha  */
+.slider {
+  /* margin: 0 auto; */
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+/* Definindo a largura e altura das divs  */
+.slides {
+  display: flex ;
+}
+
+/* Removendo os input de seleção da pagina  */
+.tttt input{
+  display: none;
+}
+
+/* Definindo a largura da div slide  */
+.slide {
+  width: 15%;
+
+}
+
+/* Definindo o tamanho das imagens  */
+.slide img{
+  width: 100%;
+}
+
+/* Definindo a posição dos botões de navegação e dando margin ao mesmo  */
+.manual-navigation{
+
+  display: flex;
+  justify-content: start;
+  flex-direction:row;
+  flex-flow: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.div-navigation {
+    background-color: transparent;
+    width: 8rem;
+    height: 5rem;
+    margin: 0.5rem;
+    padding-top: 0.4rem;
+}
+
+.div-navigation  {
+    margin-top: 1rem;
+}
+
+
+/* definindo a espesura dos botões de navegação, dando espaçamento lateral e deixando cono cursor ao passar o mouse  */
+.manual-btn{
+  border: 2px solid white;
+  padding-bottom: 4.2rem;
+  padding-left: 7.5rem;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 1s;
+  width: 100%;
+}
+
+/* Dando espaçamento entre os botões de navegação  */
+.manual-btn:not(:last-child){
+  margin-right: 10%;
+}
+
+/* definindo a cor de fundo do botão  */
+.manual-btn:hover {
+  background-color: white;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+#radio:checked ~ .first{
+  margin-left: 0;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+#radio2:checked ~ .first{
+  margin-left: -15%;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+ #radio3:checked ~ .first{
+  margin-left: -30%;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+#radio4:checked ~ .first{
+  margin-left: -45.5%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -60%;
+  }
+
+#radio6:checked ~ .first{
+    margin-left: -75%;
+  }
+
+  .div-navigation  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .manual-btn{
+    border: 1px solid transparent;
+  }
+
+/* 
+------------------------------------------------------------------------------------------------------------------
+Pagina Projeto Custoias
+------------------------------------------------------------------------------------------------------------------ 
+*/
+
+.parte1 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .parte2-container-pai {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    flex-direction:row;
+    flex-flow: wrap;
+  }
+  
+  .parte2-esquerdo img {
+    height: 20rem;
+  }
+  
+  .parte2-direito h2, h4 {
+    text-align: center;
+    padding-bottom: 0.8rem;
+  }
+  
+  .parte2-direito p {
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .parte2-direito {
+    width: 50%;
+  }
+  
+  .parte2-baixo {
+    margin-left: 1rem;
+  }
+
+  .parte2-baixo {
+    margin-bottom: 2rem;
+  }
+  
+  .parte3 {
+    background-color: rgb(49, 49, 49);
+    padding: 1rem;
+    color: white;
+  }
+  
+  .parte3 h2 {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  
+  .outros-projetos img {
+    width: 15rem;
+  }
+  
+  .outros-projetos div {
+    margin-top: 1.5rem;
+  }
+  
+  .outros-projetos-principal {
+    margin-bottom: 2rem;
+  }
+  
+
+  .div-navigation img {
+    width: 8rem;
+    height: 4.6rem;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  
+  
+  @media (max-width: 976px){
+    .parte2-esquerdo img {
+      height: 15rem;
+    }
+
+    .parte2-baixo {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .div-navigation {
+        width: 6.5rem;
+        height: 4.5rem;
+    }
+
+    
+  .div-navigation img {
+
+    padding: 0.5rem;
+  }
+
+  .manual-btn{
+    padding-bottom: 3.4rem;
+    padding-left: 7.5rem;
+  }
+
+
+  }
+  
+  
+  
+  @media (max-width: 752px){
+    .parte2-container-pai {
+      justify-content: center;
+      margin: 1rem;
+    }
+  
+    .parte2-esquerdo{
+      padding-bottom: 1rem;
+    }
+  
+    .parte2-direito p {
+      text-align: center;
+      padding: 0;
+    }
+  
+    .parte2-direito {
+      width: 100%;
+    }
+
+    .div-navigation {
+        width: 5rem;
+        height: 3rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .manual-navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-navigation img {
+        padding: 1.5rem;
+        height: 6rem;
+        
+      }
+
+      .manual-btn{
+        padding-bottom: 2.6rem;
+        padding-left: 4.5rem; 
+      }
+
+      .div-navigation  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+  }
+  
+  
+  
+  @media (max-width: 494px){
+    .parte2-esquerdo img {
+      height: 10rem;
+    }
+  
+    .parte2-direito h2 {
+      font-size: 1rem;
+      padding: 0;
+    }
+  
+    .parte2-direito p {
+      font-size: 0.9rem;
+      padding: 0;
+    }
+  
+  
+  
+  }

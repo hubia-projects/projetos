@@ -1,0 +1,1211 @@
+/************* CSS Geral ***********/
+*{
+        margin: 0;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(0, 0%, 0%);
+
+}
+
+nav img  {
+  width:8.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+nav #toggle,
+nav label {
+  display: none;
+}
+
+.menu li:hover {
+  color:  rgb(255, 72, 0);
+}
+
+
+
+/* Container 1 ------------------------------------------------------------------------------------------ */
+
+/* Configuração do container 1, zerando margens, definindo largura e altura e centralizando itens  */
+.container-1  {
+    margin: 0;
+    padding: 0;
+    /* width: 100%;
+    height: 91vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Definindo a largura e altura da div slider principal e deixando divs na mesma linha  */
+.slider {
+  /* margin: 0 auto; */
+  width: 100%;
+  height: 600%;
+  overflow: hidden;
+}
+
+/* Definindo a largura e altura das divs  */
+.slides {
+  width: 700%;
+  height: 560%;
+  display: flex ;
+}
+
+/* Removendo os input de seleção da pagina  */
+.slides input{
+  display: none;
+}
+
+/* Definindo a largura da div slide  */
+.slide {
+  width: 15%;
+  position: relative;
+}
+
+/* Definindo o tamanho das imagens  */
+.slide img{
+  width: 100%;
+}
+
+/* Definindo a posição dos botões de navegação e dando margin ao mesmo  */
+.manual-navigation{
+  position: relative;
+  width:  100%;
+  margin-top: -18.3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+/* definindo a espesura dos botões de navegação, dando espaçamento lateral e deixando cono cursor ao passar o mouse  */
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* Dando espaçamento entre os botões de navegação  */
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+/* definindo a cor de fundo do botão  */
+.manual-btn:hover {
+  background-color: white;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+#radio:checked ~ .first{
+  margin-left: 0;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+#radio2:checked ~ .first{
+  margin-left: -15%;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+ #radio3:checked ~ .first{
+  margin-left: -30%;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+#radio3:checked ~ .first{
+  margin-left: -45.5%;
+}
+
+/* Definindo o espaçamento que as imagens terão ao serem selecionadas   */
+.navigation-auto div {
+  border: 1.5px solid rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* definindo a largura dos botões de fundo e dando margem  */
+.navigation-auto{
+  position: absolute;
+  width: 100%;
+  margin-top:40.1%;
+  display: flex;
+  justify-content: center;
+}
+
+/* dando espaçamento lateral no botão de fundo  */
+.navigation-auto div:not(:last-child){
+  margin-right: 42px;
+}
+
+/* definindo a cor que o botão tera ao ficar selecionado  */
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+
+/* definindo a cor que o botão tera ao ficar selecionado  */
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: white;
+}
+
+/* definindo a cor que o botão tera ao ficar selecionado  */
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: white;
+}
+
+/* definindo a cor que o botão tera ao ficar selecionado  */
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: white;
+}
+
+
+
+/* mudando a cor do botão de orçamento com hover  */
+.dados-contato-cont-1 a :hover {
+  color: white;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+
+/* Container 2 ------------------------------------------------------------------------------------------ */
+.container-2 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(4, 84, 116);
+    padding-top: 2.5rem;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+/* Deixando as titulos um em baixo do outro e centralizando */
+.titulos {
+    display: flex;
+    justify-content: center;
+}
+
+/* Centralizando os titulos e dando espaçamento na parte superior */
+.titulos-container1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* Definindo tamanho do primeiro titulo  */
+.titulo-1-sobre-nos  {
+    font-size: 2rem;
+}
+
+.titulo-1-sobre-nos strong {
+  font-size: 2.5rem;
+}
+
+/* Definindo tamanho do segundo titulo  */
+
+.titulo-2-sobre-nos  {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Defindo a largura dos icones de qualidade */
+.icones-qualidade img {
+    width: 4rem;
+}
+
+/* Defindo as larguras das divs de qualide, centralizando as divs e dando espaçamento entre elas  */
+.icones-qualidade  {
+    display: flex;
+    flex-direction:row;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    height: auto;
+}
+
+.qualidades {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  box-sizing: border-box;
+
+}
+
+/* Dando espeaçamento lateral no titulo das div que tem os icones de qualidade */
+.icones-qualidade h3 {
+    padding-left: 1rem;
+}
+
+/* Dando um maior espaçamento no icone de qualidade equipa  */
+
+
+.texto-final-do-container {
+    padding: 1rem;
+
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.texto-final-1 {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+/* ------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* Container 3 ------------------------------------------------------------------------------------------ */
+
+
+/* Dando cor ao container 3 e definindo a largura e a altura  */
+.container-3 {
+    background-color: rgb(95, 93, 93);
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 1rem;
+}
+
+/* Centralizando o primeiro titulo, dando espaçamento na parte superior, definindo o tamanho da fonte e centralizando */
+.container-3 h1 {
+    text-align: center;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+}
+
+/* Colando uma linha a baixo do titulo principal */
+.linha-cont-3 {
+    border-bottom: 5px solid rgb(255, 94, 0);
+    border-radius: 2px;
+    width: 10rem;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 1rem;
+}
+
+/* Centralizando o segundo titulo, dando o tamanho da fonte e dando pargem superior  */
+.segundo-titulo-container-3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Definindo o tamanho das imagens dos icones dos serviços prestados  */
+.icones-servicos img {
+    width: 5rem;
+}
+
+/* Centralizando os icones dos serviçies prestados  */
+.icones-servicos  {
+    display: flex;
+    justify-content: center;
+}
+
+/* Dando espaçamento lateral no titulo dos serviços  */
+.icones-servicos h3 {
+    padding-left: 1.5rem;
+}
+
+/* Centralizando os icones dos serviçoes e dando margin total ao mesmos  */
+.icones-servicos div {
+    display: flex;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+/* Definindo o tamanho das imagens dos serviços avulsos  */
+.servicos-avulsos img {
+    width: 3rem;
+}
+
+/* Centralizando os icones dos serviçoes avulsos  */
+.servicos-avulsos  {
+    display: flex;
+    justify-content: center;
+}
+
+/* Dando margem e centraliznado as divs dos serviços avulsos  */
+.servicos-avulsos {
+  display: flex;
+  flex-direction:row;
+  flex-flow: wrap;
+  justify-content: center;
+  
+}
+
+.avulsos{
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 2rem;
+}
+
+/* Dando espaçamento lateral entre os icones e as informações dos serviços avulsos  */
+.servicos-avulsos h3 {
+    padding-left: 1.5rem;
+}
+
+.diferencial-text {
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 2.2rem;
+}
+
+/* Centralizando e definindo o tamanho da fonte dos serviços avulsos  */
+.icones-diferencial {
+  display: flex;
+  flex-direction:row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.diferencial {
+
+  align-items: center;
+  box-sizing: border-box;
+  margin: 2rem;
+  
+}
+
+/* Definindo o tamanho das imagens dos serviços avulsos  */
+.icones-diferencial img {
+    width: 3rem;
+}
+
+/* Centralizando as divs dos serviços avulsos e dando margem  */
+.icones-diferencial div {
+    display: flex;
+    margin: 3rem;
+    margin-top: 0;
+    align-items: center;
+}
+
+/* Dando espaçamento lateral entre os icones e as informações dos serviços avulsos  */
+.icones-diferencial h3 {
+    padding-left: 1.5rem;
+}
+
+/* Centralizando e dando margem superior nos icones dos serviços diferenciados  */
+.icones-diferencial {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Estilizando a div de faça seu orçamento, dando a cor de fundo, a cor da fonte,
+ margens superiores e inferiores e centralizando  */
+.orcamento-container3 {
+    display: flex;
+    justify-content:space-evenly;
+    background-color: rgb(255, 72, 0);
+    align-items: center;
+    color: white;
+    margin-top: 2.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex-direction:row;
+    flex-flow: wrap;
+    padding-top: 0.5;
+}
+
+.orcam-cont-3-text-1 h2 {
+  text-align: center;
+}
+
+.orcam-cont-3-text-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.orcam-cont-3-text-2 {
+  padding-right: 1rem;
+}
+
+/* Definindo a cor, dando espaçamento e defininfo a cor das bordas do botão  */
+.orcamento-container3 h3 {
+    border: 2px solid white;
+    padding: 0.5rem;
+}
+
+/* mudando a cor do botão ao passar o mouse  */
+.orcamento-container3 a :hover {
+    color: black;
+}
+
+/* dando cor a o link do container 3 e tirando a grifagem do mesmo  */
+.orcamento-container3 a {
+    color: white;
+    text-decoration: none;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* Container 4 ------------------------------------------------------------------------------------------ */
+.container-4 {
+    background-color: rgb(43, 39, 39);
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    color: white;
+}
+
+.btn-portifolio {
+  background-color: orange;
+  width: 12rem;
+  text-align: center;
+  margin-left: 2rem;
+  padding: 6px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.btn-portifolio-principal :hover{
+  background-color: rgb(255, 94, 0);
+}
+
+.btn-portifolio-principal {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-portifolio a {
+  text-decoration: none;
+}
+
+.btn-portifolio h2 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.btn-portifolio h2:hover {
+  color: white;
+}
+
+.container-4 h1, h3 {
+  text-align: center;  
+  margin-top: 3px;
+}
+
+.container-4 h3 {
+  padding-top: 2rem;
+}
+
+.container-4 h4 {
+  padding-top: 1rem;
+}
+
+  .projetos-feitos {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-flow: wrap;
+    margin-top: 1rem;
+  }
+
+.projeto {
+  margin: 1rem;
+  margin-bottom: 0;
+  margin-top: 4rem;
+}
+
+.projetos {
+  text-align: center;
+}
+
+.projetos img {
+  width: 350px;
+}
+
+.projetos a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* button ------------------------  */
+
+.scrollTop {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+.scrollTop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollTop img {
+  width: 70%;
+  transform: rotate(-90deg);
+}
+
+
+
+
+
+
+/* Footer ------------------------------------------------------------------------------------------ */
+
+/* Definindo a cor de fundo do footer  */
+footer {
+    background-color: black;
+}
+
+/* Dando espaçamento entre as divs do footer principal, centralizando as divs e dando espaço inferior e superior  */
+.footer-principal{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+/* Defindo o tamanho da logo que ira no footer  */
+.logo-footer a img {
+    width: 15rem;
+    padding: 1rem;
+}
+
+/* Definindo a cor da fonte dos dados de contato  */
+.dados-contato {
+    color: white;
+    padding: 1rem;
+}
+
+/* dando margem no titulo da div siga-nos  */
+.dados-contato h2 {
+    padding-bottom: 1.5rem;
+}
+
+/* definindo a cor do botão de orçamento do footer e centralizando o mesmo  */
+.dados-contato a  {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+}
+
+/* mudando a cor do botão de orçamento com hover  */
+.dados-contato  a:hover {
+    color: white;
+
+}
+
+.orçamento-footer {
+    background-color: orange;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.ttt  p:hover {
+  background-color: rgb(255, 94, 0);
+}
+
+
+
+
+
+/* defindo o tamanho dos icones das redes sociais e dando espaçamento entre elas  */
+.siga-nos img {
+    width: 3.5rem;
+    padding: 0.5rem;
+}
+
+.siga-nos {
+  padding: 1rem;
+}
+
+/* definido a cor do titulo da div siga-nos, centraliznado o mesmo e dando espaçamento entre o titulo e os icones  */
+.siga-nos h2  {
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Colocando uma linha entre o footer principal e o segundario  */
+.linha-footer {
+    border-bottom: 1px solid white;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilizando a barra de navegação implementada no footer  */
+.menu-footer a, ul, li {
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-footer {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Dando cor ao passar o mouse nos icones do menu  */
+.menu-footer a :hover {
+  color:  rgb(255, 72, 0);
+}
+
+
+/* ---------------------------------------//////------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* CSS MObile **************************/
+
+
+
+/* De 930px para "baixo" ficam as configurações mobile **************/
+@media (max-width: 930px){
+  /* Container-1 ------------------------------------------------------------------------------------------ */
+    /* definindo a largura dos botões de fundo e dando margem  */
+  .navigation-auto{
+    margin-top: 40.4%;
+  }
+
+}
+
+/* --------------------////////////////-------------------------------------- */
+
+
+/* De 780px para "baixo" ficam as configurações mobile **************/
+@media (max-width: 780px){
+  /* Container-4 ------------------------------------------------------------------------------------------ */
+    /* definindo margem superior */
+    .projetos-feitos {
+      margin-top: 3rem;
+    }
+
+  /* ------------------------------------------------------------------------------------------------------ */
+
+
+  /* Footer ------------------------------------------------------------------------------------------ */
+
+  .footer-principal {
+    padding: 0;
+  }
+}
+
+
+
+/* De 705px para "baixo" ficam as configurações mobile **************/
+
+@media (max-width: 705px) {
+  nav .menu {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem 0;
+  }
+
+  nav label {
+      display: inline-flex;
+      color: white;
+      cursor: pointer;
+  }
+
+  nav label img {
+    width: 4rem;
+  }
+
+  nav img  {
+    margin-right: 0;
+  }
+
+  nav #toggle:checked ~ .menu {
+      height: 100%;
+  }
+}
+
+
+/* -------------------------------------------////////////////--------------------------------------------- */
+
+/* De 694px para "baixo" ficam as configurações mobile **************/
+@media (max-width: 694px)
+  {
+    
+/* Container-1 ------------------------------------------------------------------------------------------ */
+    /* definindo a largura dos botões de fundo e dando margem  */
+  .navigation-auto{
+  margin-top: 40.6%;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+/* Container-2 ------------------------------------------------------------------------------------------ */
+
+.titulo-1-sobre-nos {
+  font-size: 1.5rem;
+}
+
+.titulo-2-sobre-nos {
+  font-size: 1.1rem;
+}
+
+.titulos {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.icones-qualidade  {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+
+.qualidades {
+  padding-top: 1rem;
+}
+
+.qualidades h3 {
+  text-align: start;
+}
+
+
+
+/* container-3------------------------------------------------------------------------------------------------  */
+
+
+.orcamento-container3 h3 {
+  margin-top: 1.5rem;  
+}
+
+.orcamento-container3 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.orcam-cont-3-text-1 h4 {
+  text-align: center;
+}
+
+  }
+/* --------------------////////////////-------------------------------------- */
+
+
+  @media (max-width: 400px){
+    /* Container-1 ------------------------------------------------------------------------------------------ */
+    /* definindo a largura dos botões de fundo e dando margem  */
+  .navigation-auto{
+    margin-top: 41%;
+  }
+
+  .servicos-avulsos {
+    display: flex;
+    justify-content: start;
+    margin-left: 1rem;
+  }
+
+  .icones-diferencial {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+@media (max-width: 510px){
+/* footer ------------------------------------------------------------------------------------------ */
+  
+   .dados-contato {
+    text-align: center;
+   }
+
+   .menu-footer{
+    font-size: 0.7rem;
+   }
+
+   .menu-footer a{
+    padding: 0;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+/* 
+------------------------------------------------------------------------------------------------------------------
+Pagina de Agendamento de Visita
+------------------------------------------------------------------------------------------------------------------ 
+*/
+
+.body-visita {
+  width: 100%;
+  height: auto;
+  background-color: rgb(66, 65, 63);
+  padding: 1rem;
+}
+
+.body-principal {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+
+.body-principal h1, h4{
+  text-align: center;
+}
+
+.body-principal h4 {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.conj-inp-1, .conj-inp-2, .conj-inp-3 {
+  text-align: center;
+  padding-top: 1.5rem;
+  flex-direction:row;
+  flex-flow: wrap;
+}
+
+.conj-inp-1{
+  display: flex;
+  justify-content: center;
+}
+
+.name-visit, .email-visit {
+  display:grid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.conj-inp-1 input{
+  width: 25rem;
+  height: 1.9rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.conj-inp-2 {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.telefone-visit {
+  display: grid;
+}
+
+.telefone-visit input {
+  width: 18rem;
+  height: 1.9rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(7, 7, 7);
+}
+
+.telefone-visit, .horario-visit {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.horario-visit {
+  display: grid;
+}
+
+.time input {
+  width: 9rem;
+  height: 1.9rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(0, 0, 0) ;
+}
+
+.horarios-select {
+  display: flex;
+  align-items: center;
+}
+
+form label {
+  padding-bottom: 0.4rem;
+}
+
+form input {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.horarios-select input {
+  margin-left: 1rem;
+}
+
+.time input {
+  text-align: center;
+
+}
+
+.conj-inp-3 {
+  display: grid;
+  justify-content: center;
+}
+
+.conj-inp-3 input{
+  width: 25rem;
+  height: 10rem;
+
+}
+
+.btn-envio-formulario input{
+  border: 0;
+  width: 15rem;
+  height: 1.8rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: orange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-principal input:hover {
+  color: white;
+}
+
+.btn-envio-formulario {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  border-radius: 0.6rem;
+  border: 1 px solid white;
+  background-color: orange;
+  cursor: pointer;
+
+}
+
+.btn-principal {
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+
+.btn-envio-formulario {
+  border: 0;
+}
+/* -----------------------------------------------------------------  */
+
+@media (max-width: 510px){
+  .conj-inp-1 input {
+    width: 16rem;
+  }
+
+  .telefone-visit input {
+    width: 14rem;
+  }
+
+  .horario-text  {
+    margin-top: 1rem;
+  }
+
+  .conj-inp-3 input {
+    width: 17rem;
+  }
+
+
+}
+
+
+/* 
+------------------------------------------------------------------------------------------------------------------
+Pagina Portfólio
+------------------------------------------------------------------------------------------------------------------ 
+*/
+
+.container-4 {
+  padding-bottom: 5rem;
+}
+
+.projetos-feitos {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina Thanks
+------------------------------------------------------------------------------- */
+
+.main-thaks {
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  text-align: center;
+}
+
+.thanks-h1, .thanks-h2 {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+
+.thanks-h2 {
+  margin-bottom: px;
+}
+
+.img-thanks {
+  display: flex;
+  justify-content: center;
+}
+
+.button-pagina-inicial{
+  display: flex;
+  justify-content: center;
+}
+
+.button-pagina-inicial button{
+  background-color: blue;
+  color: white;
+  border: 0;
+  padding: 5px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.placeholder-text::placeholder {
+  padding: 5px;
+
+}
+
+footer {
+  margin-top: 25px;
+}
+
+
+@media (max-width: 851px) {
+  .carousel-control-prev-icon {
+      margin-top: 300px;
+  }
+
+  .carousel-control-next-icon {
+      margin-top: 300px;
+  }
+}
+
+.carousel-control-prev-icon {   
+  margin-right: 80px;
+}
+
+.carousel-control-next-icon {
+  margin-left: 80px;
+}
+
+
+.carouselExampleIndicators  li  {
+  margin-top: 100px;
+  padding-top: 100px;
+}

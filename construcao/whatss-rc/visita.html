@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Configurações da pagina -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Visita</title>
+    <link rel="stylesheet" href="styles.css">
+
+<!-- Colocando Icone do logo nas abas do site  -->
+    <link rel="icon" type="image/png" href="img/logo-icon.png"/>
+</head>
+<header>
+
+<!-- Menu de navegação -->
+<div class="wrapper">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+        </div>
+        <input type="checkbox" name="" id="toggle">
+        <label for="toggle"> <img src="img/barra-de-navegação.png" alt="Barra de Navegação Mobile"></label>
+            <div class="menu" id="home">
+                <ul>
+                    <a href="index.html#container-2"><li>SOBRE NÓS</li></a>
+                    <a href="index.html#container-3"><li>SERVIÇOS</li></a>
+                    <a href="index.html#container-4"><li>PORTFÓLIO</li></a>
+                    <a href="#footer"><li>CONTATO</li></a>
+                </ul>
+            </div>
+        
+    </nav>
+</div>
+</header>
+
+<!-- Corpo do site -->
+<body>
+
+    <section class="body-visita">
+        <div class="body-principal">
+            <h1>Formulario de Visita</h1>
+            <div class="linha-cont-3"></div>
+            <h4>Preencha o formulario a baixo que entraremos em contato para agendar
+                 uma visita para um orçamento rapido e facil
+            </h4>
+            <form action="https://formsubmit.co/c3abf2923abf4116f678e6f32bf7a3d6"f method="POST" enctype="multipart/form-data">
+
+
+          <!-- <input id="name" type="text" name="Name" class="placeholder-text" placeholder="Nome" required/>       -->
+
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Orçamento">
+                    <input type="hidden" name="_captcha" value="false">
+
+                <div class="conj-inp-1">
+                    <div class="name-visit">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name"  name="Name"  required/>
+                    </div>
+                    <div class="email-visit">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required>
+                    </div>
+                </div>
+
+                <div class="conj-inp-2">
+                    <div class="telefone-visit">
+                        <label for="telepone">Telefone</label>
+                        <input type="tel" id="telepone" name="Telefone" required>
+                    </div>
+                    <div class="horario-visit">
+                        <div class="horario-text">
+                            <label for="horario">Melhor Horario de Contato?</label>
+                        </div>
+
+                        <div class="horarios-select">
+                            <div class="time">
+                                <input type="time" id="horario" name="Horario" required>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="manha" name="Manha" >
+                                <label for="manha">Manhã</label>
+                                <input type="checkbox" id="tarde" name="Tarde">
+                                <label for="tarde">Tarde</label>
+                            </div>
+    
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="conj-inp-3">
+                    <label for="mensager">Sua Mensagem</label>
+                    <input type="text" id="mensager" name="Mensagem">
+                </div>
+
+                <div class="btn-principal">
+                    <button class="btn-envio-formulario">
+                  <!-- <input type="hidden" name="_next" value="http://localhost:3001/thanks"> -->
+
+                        <input type="submit" value="Enviar Formulario de Contato" id="submit" required>    
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    
+</body>
+<footer id="footer" >
+
+    <!-- Footer principal contendo as informações de contato, as redes sociais e o logo  -->
+        <section class="footer-principal">
+            <div class="logo-footer"><a href="index.html"><img src="img/Logo.png" alt="Logo Site"></a>
+            </div>
+            <div class="dados-contato">
+                <h2>CONTACTE-NOS</h2>
+                <p><strong>TELEFONE:</strong> +351 968 383 769</p>      
+                <p><strong>EMAIL:</strong> contatowhatssrc@gmail.com</p>
+                <div class="ttt">
+                    <a href="visita.html" target="_blank"><p class="orçamento-footer"><strong>SEU ORÇAMENTO SEM COMPROMISSO</strong></p></a>
+    
+                </div>
+            </div>
+            <div class="siga-nos">
+                <h2>SIGA-NOS</h2>
+                <a href="https://www.instagram.com/whatss.rc/" target="_blank"><img src="img/instagram.webp" alt="Logo instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100089556530945" target="_blank"><img src="img/Facebook.png" alt="Logo Facebook"></a>
+                <a href="https://api.whatsapp.com/send?phone=351968383769&text=Ol%C3%A1%2C%20gostaria%20de
+                %20mais%20informa%C3%A7%C3%B5es%20sobre" target="_blank"><img src="img/whats-logo2.png" alt="Logo Whats App"></a>
+            </div>
+        </section>
+    <!-- Linhas que se para o footer principal do secundario -->
+        <div class="linha-footer"></div>
+    <!-- Menu de navegação no footer  -->
+        <div class="menu-footer">
+            <ul>
+                <a href="#home"><li>HOME</li></a>
+                <a href="index.html#container-2"><li>SOBRE-NOS</li></a>
+                <a href="index.html#container-3"><li>SERVIÇOS</li></a>
+                <a href="index.html#container-4"><li>PORTFÓLIO</li></a>
+            </ul>
+        </div>
+    </footer>
+    </html>
