@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Clientes - Hubia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lista de Clientes Potenciais</h1>
+
+  <div>
+    <input type="text" id="filtroNome" placeholder="Filtrar por nome">
+    <input type="text" id="filtroEndereco" placeholder="Filtrar por endereço">
+    <select id="filtroStatus">
+      <option value="">Todos os Status</option>
+      <option value="encontrado">Encontrado</option>
+      <option value="em_contato">Entrei em contato</option>
+      <option value="aguardando">Aguardando</option>
+      <option value="sem_interesse">Sem interesse</option>
+      <option value="em_desenvolvimento">Em desenvolvimento</option>
+    </select>
+    <button onclick="aplicarFiltros()">Filtrar</button>
+    <a href="index.html"><button>Voltar</button></a>
+  </div>
+
+  <table border="1" cellpadding="8" id="tabelaClientes" style="margin-top: 20px; width: 100%;">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Endereço</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="listaClientes">
+      <!-- Lista gerada por JS -->
+    </tbody>
+  </table>
+
+  <script src="listagem.js"></script>
+</body>
+</html>

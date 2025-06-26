@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+form input, form select, form button {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+#map {
+  height: 500px;
+  margin-top: 20px;
+}

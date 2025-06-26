@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de Clientes - Hubia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <h1>Cadastro de Clientes Potenciais</h1>
+  <form id="clienteForm">
+    <input type="text" placeholder="Nome" id="nome" required>
+    <input type="tel" placeholder="Telefone" id="telefone" required>
+    <input type="email" placeholder="Email" id="email" required>
+    <input type="text" placeholder="Endereço (ex: Braga, Portugal)" id="endereco" required>
+    <select id="status">
+      <option value="encontrado">Encontrado</option>
+      <option value="em_contato">Entrei em contato</option>
+      <option value="aguardando">Aguardando</option>
+      <option value="sem_interesse">Sem interesse</option>
+      <option value="em_desenvolvimento">Em desenvolvimento</option>
+    </select>
+    <button type="submit">Salvar Cliente</button>
+  </form>
+
+  <div id="map"></div>
+
+<a href="clientes.html">
+  <button style="margin-top: 10px;">Ver Lista de Clientes</button>
+</a>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
