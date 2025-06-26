@@ -8,36 +8,65 @@
 <body>
   <h1>Lista de Clientes Potenciais</h1>
 
-  <div>
-    <input type="text" id="filtroNome" placeholder="Filtrar por nome">
-    <input type="text" id="filtroEndereco" placeholder="Filtrar por endereço">
-    <select id="filtroStatus">
-      <option value="">Todos os Status</option>
+<div class="filtros">
+  <input type="text" id="filtroNome" placeholder="Filtrar por nome">
+  <input type="text" id="filtroEndereco" placeholder="Filtrar por endereço">
+  <select id="filtroStatus">
+    <option value="">Todos os Status</option>
+    <option value="encontrado">Encontrado</option>
+    <option value="em_contato">Entrei em contato</option>
+    <option value="aguardando">Aguardando</option>
+    <option value="sem_interesse">Sem interesse</option>
+    <option value="em_desenvolvimento">Em desenvolvimento</option>
+  </select>
+  <button onclick="aplicarFiltros()">Filtrar</button>
+  <a href="index.html"><button>Voltar</button></a>
+</div>
+
+
+<table border="1" cellpadding="8" id="tabelaClientes" style="margin-top: 20px; width: 100%;">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>Endereço</th>
+      <th>Status</th>
+      <th>Ações</th> <!-- Nova coluna -->
+    </tr>
+  </thead>
+  <tbody id="listaClientes">
+    <!-- Lista gerada por JS -->
+  </tbody>
+</table>
+
+
+<!-- Modal para edição -->
+<div id="editModal" class="modal" style="display: none;">
+  <form id="editForm">
+    <h3>Editar Cliente</h3>
+    <input type="text" id="editNome" placeholder="Nome" required />
+    <input type="email" id="editEmail" placeholder="Email" required />
+    <input type="tel" id="editTelefone" placeholder="Telefone" required />
+    <input type="text" id="editEndereco" placeholder="Endereço" required />
+    <input type="text" id="editNumero" placeholder="Número" required />
+    <input type="text" id="editCidade" placeholder="Cidade" required />
+    <input type="text" id="editCep" placeholder="CEP" required />
+    <select id="editStatus">
       <option value="encontrado">Encontrado</option>
       <option value="em_contato">Entrei em contato</option>
       <option value="aguardando">Aguardando</option>
       <option value="sem_interesse">Sem interesse</option>
       <option value="em_desenvolvimento">Em desenvolvimento</option>
     </select>
-    <button onclick="aplicarFiltros()">Filtrar</button>
-    <a href="index.html"><button>Voltar</button></a>
-  </div>
+    <input type="hidden" id="editId" />
+    <button type="submit">Salvar Alterações</button>
+    <button type="button" onclick="fecharModal()">Cancelar</button>
+  </form>
+</div>
 
-  <table border="1" cellpadding="8" id="tabelaClientes" style="margin-top: 20px; width: 100%;">
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Email</th>
-        <th>Telefone</th>
-        <th>Endereço</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody id="listaClientes">
-      <!-- Lista gerada por JS -->
-    </tbody>
-  </table>
 
-  <script src="listagem.js"></script>
+  <!-- Aqui o módulo -->
+  <script type="module" src="listagem.js"></script>
 </body>
 </html>
